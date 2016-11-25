@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
 body,html{
 	width: 100%;
 	height: 100%;
@@ -7,7 +8,19 @@ body,html{
 	margin: 0;
 	box-sizing: border-box;
 }
-._hidden{
+
+.box{
+	padding: 0 0 1%;
+	text-align: center;
 	display: none;
 }
 
+p{
+	padding: 5% 0 0;
+	color: #1D6BFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3rem;
+	font-family: 'VT323', sans-serif;
+	letter-spacing: 3px;
+}

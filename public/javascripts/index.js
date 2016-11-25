@@ -1,13 +1,37 @@
 (function($){
-	$("input[type=range]").on("input",function(){
-		var red = $("#red").val();
-		var green = $("#green").val();
-		var blue = $("#blue").val();
-		setBackgroundColor(red,green,blue);
-	})
+	var milkcocoa = new MilkCocoa('zooivy41ont.mlkcca.com'),
+			ds = milkcocoa.dataStore("url");
 
-	function setBackgroundColor(red,green,blue){
-		var colors = [red,green,blue]
-		$("body,html").css("background-color","rgb("+colors.join(",")+")");
+	var ml = new MilkCocoa('noteiprs7bq4.mlkcca.com'),
+			led = ml.dataStore('led');
+			
+			// led.push({red:255,green:0,blue:0});
+
+	/**
+	 * generateQRCode
+	 * @param  { string } uuid
+	 */
+	function generateQRCode(uuid){
+		$(".box").qrcode({
+			render: "image",
+			size: 250,
+			fill: "#FF545C",
+			text: "http://konojunya.ngrok.io/control/"+uuid,
+			radius: 0
+		});
+		console.log("http://konojunya.ngrok.io/control/"+uuid)
 	}
-})(jQuery)
+
+	function init(){
+		ds.stream().next(function(err,item){
+			generateQRCode(item[item.length -1].value.uuid)
+			setTimeout(function(){
+				$(".box").fadeIn()
+			},500)
+		})
+	}
+
+	init()
+
+
+})(jQuery);
