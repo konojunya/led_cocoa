@@ -16,10 +16,10 @@
 			render: "image",
 			size: 250,
 			fill: "#FF545C",
-			text: "http://konojunya.ngrok.io/control/"+uuid,
+			text: "http://devjun.link/control/"+uuid,
 			radius: 0
 		});
-		console.log("http://konojunya.ngrok.io/control/"+uuid)
+		console.log("http://devjun.link/control/"+uuid)
 	}
 
 	function init(){
