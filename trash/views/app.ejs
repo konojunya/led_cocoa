@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HAL Raspberry controller</title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+  <body>
+    <div id="ax"></div>
+    <div id="brake"></div>
+    <div class="speed-meter">
+      <div class="meter">
+        <div class="pointer"></div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="text hidden"></div>
+    <div class="engine-btn hidden"></div>
+    <div class="sideWays">
+      <p>遊ぶ前に！</p>
+      <ul>
+        <li>画面のロックを外してください。</li>
+        <li>画面を横向きにして持ってください。</li>
+        <li>今から遊び方を教えちゃうゾ！</li>
+      </ul>
+      <p class="ok">OK!</p>
+    </div>
+    <audio src="/audio/brake.mp3" class="brake-mp3" type="audio/x-mp3"/></audio>
+    <audio src="/audio/startup.mp3" class="start-mp3" type="audio/x-mp3"/></audio>
+    <audio src="/audio/downspeed.mp3" class="downspeed-mp3" type="audio/x-mp3"/></audio>
+    <audio src="/audio/upspeed.mp3" class="upspeed-mp3" type="audio/x-mp3"/></audio>
+    <script src="/javascripts/lib/socketio.js"></script>
+    <script src="/javascripts/lib/jquery.min.js"></script>
+    <script src="/javascripts/lib/jquery-css-tranfrom.js" charset="utf-8"></script>
+	<script src="/javascripts/src/settings.js" charset="utf-8"></script>
+    <script src="/javascripts/src/app.js"></script>
+  </body>
+</html>

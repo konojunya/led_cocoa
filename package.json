@@ -1,0 +1,27 @@
+{
+  "name": "LEDcocoa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konojunya/led_cocoa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konojunya/led_cocoa/issues"
+  },
+  "homepage": "https://github.com/konojunya/led_cocoa#readme",
+  "dependencies": {
+    "basic-auth-connect": "^1.0.0",
+    "express": "^4.14.0",
+    "milkcocoa": "^0.6.0",
+    "node-uuid": "^1.4.7",
+    "socket.io": "^1.6.0"
+  }
+}

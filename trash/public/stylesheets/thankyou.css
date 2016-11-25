@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'VT323', sans-serif;
+}
+h1 {
+  color: #ff1493;
+  font-size: 3rem;
+  margin: 10% 0 2%;
+}
+p {
+  color: rgb(30, 209, 21);
+  font-size: 3rem;
+  margin-bottom: 2%;
+}

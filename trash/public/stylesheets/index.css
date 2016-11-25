@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  padding: 0 0 1%;
+  text-align: center;
+  position: relative;
+  bottom: -100%;
+}
+p {
+  padding: 5% 0 0;
+  color: rgb(30, 209, 21);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'VT323', sans-serif;
+}
+.curtainR,
+.curtainL {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.curtainR {
+  top: -5%;
+  right: 0%;
+  background-image: url(/images/curtain_R.png);
+  background-repeat: no-repeat;
+}
+.curtainL {
+  top: -5%;
+  left: 0%;
+  background-image: url(/images/curtain_L.png);
+  background-repeat: no-repeat;
+}

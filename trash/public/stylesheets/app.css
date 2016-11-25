@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 10px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	text-align: center;
+	background-color: black;
+	padding: 100% 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#ax {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-image: url(/images/ax.png);
+	background-position: right bottom;
+	background-size: 40%;
+	background-repeat: no-repeat;
+}
+#brake {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(/images/ax.png);
+	background-position: left bottom;
+	background-size: 40%;
+	background-repeat: no-repeat;
+}
+.speed-meter {
+	width: 36vw;
+	height: 36vw;
+	background-color: white;
+	border-radius: 50%;
+	position: fixed;
+	top: 30px;
+	left: 32vw;
+	overflow: hidden;
+}
+.meter {
+	width: 36vw;
+	height: 36vw;
+	background-color: gray;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 70%;
+}
+.pointer {
+	width: 60vw;
+	height: 5px;
+	background-color: black;
+	z-index: -10;
+	position: absolute;
+	top: 16vw;
+	left: -12vw;
+	transform: rotate(60deg);
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.sideWays {
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-color: darkred;
+}
+.sideWays p {
+	font-size: 2rem;
+	color: white;
+	margin: 3% 0;
+}
+.sideWays ul {
+	width: 80%;
+	margin: 0 auto;
+	border: 5px dotted gray;
+	padding: 3%;
+}
+.sideWays li {
+	text-align: left;
+	color: antiquewhite;
+	margin-left: 15%;
+	list-style: decimal;
+	font-size: 0.8rem;
+}
+.sideWays .ok {
+	width: 80%;
+	background-color: indianred;
+	padding: 5px;
+	margin: 5% auto;
+	border: 3px outset white;
+}
+.sideWays .ok:active {
+	border: 0;
+}
+.text {
+	width: 40%;
+	padding: 20px;
+	position: fixed;
+	z-index: 100;
+	background-color: white;
+}
+.engine-btn {
+	position: fixed;
+	width: 60%;
+	height: 50vh;
+	top: 10%;
+	left: 20%;
+	background-image: url(/images/engine-btn.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: none;
+}
+.guide {
+	background-color: gray;
+	z-index: 70;
+	-webkit-animation-name: guide;
+		 -moz-animation-name: guide;
+			 -o-animation-name: guide;
+					animation-name: guide;
+	-webkit-animation: guide 1s infinite;
+			 -o-animation: guide 1s infinite;
+				 	animation: guide 1s infinite;
+}
+@keyframes guide {
+	0%,
+	100% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
+@-webkit-keyframes guide {
+	0%,
+	100% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
