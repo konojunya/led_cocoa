@@ -17,9 +17,9 @@ var ml = new MilkCocoa("noteiprs7bq4.mlkcca.com"),
 
 rgb_data.on("send",function(data){
 	led_data.push({
-		red: data.value.rgb[0],
-		green: data.value.rgb[1],
-		blue: data.value.rgb[2]
+		red: parseInt(data.value.rgb[0]),
+		green: parseInt(data.value.rgb[1]),
+		blue: parseInt(data.value.rgb[2])
 	})
 })
 
