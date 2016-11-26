@@ -17,6 +17,14 @@ void onled(DataElement *elem){
     int red = elem->getInt("red");
     int blue = elem->getInt("blue");
     int green = elem->getInt("green");
+
+    Serial.print("red : ");
+    Serial.print(red);
+    Serial.print("green : ");
+    Serial.print(green);
+    Serial.print("bule : ");
+    Serial.print(blue);
+    
     analogWrite(RED, red);
     analogWrite(GREEN, blue);
     analogWrite(BLUE, green);
