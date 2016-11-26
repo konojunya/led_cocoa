@@ -1,8 +1,8 @@
 (function($){
-	var milkcocoa = new MilkCocoa('zooivy41ont.mlkcca.com'),
+	var milkcocoa = new MilkCocoa('yieldivyo8q19.mlkcca.com'),
 			ds = milkcocoa.dataStore("url");
 
-	var ml = new MilkCocoa('noteiprs7bq4.mlkcca.com'),
+	var ml = new MilkCocoa('dogivyoc3zl.mlkcca.com'),
 			led = ml.dataStore('led');
 			
 			// led.push({red:255,green:0,blue:0});

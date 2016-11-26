@@ -8,11 +8,11 @@ var
 	id_before = "",
 	MilkCocoa = require("milkcocoa");
 
-var milkcocoa = new MilkCocoa('zooivy41ont.mlkcca.com'),
+var milkcocoa = new MilkCocoa('yieldivyo8q19.mlkcca.com'),
 		rgb_data = milkcocoa.dataStore("rgb"),
 		url_data = milkcocoa.dataStore("url");
 
-var ml = new MilkCocoa("noteiprs7bq4.mlkcca.com"),
+var ml = new MilkCocoa("dogivyoc3zl.mlkcca.com"),
 		led_data = ml.dataStore("led");
 
 rgb_data.on("send",function(data){

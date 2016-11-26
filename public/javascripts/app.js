@@ -1,5 +1,5 @@
 (function($){
-	var milkcocoa = new MilkCocoa('zooivy41ont.mlkcca.com'),
+	var milkcocoa = new MilkCocoa('yieldivyo8q19.mlkcca.com'),
 			ds = milkcocoa.dataStore("rgb"),
 			url_data = milkcocoa.dataStore("url"),
 			colors = [];

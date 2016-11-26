@@ -8,7 +8,7 @@ extern "C" {
 #define WLAN_SSID       "makki_wifi"
 #define WLAN_PASS       "000000000"
 /************************* Your Milkcocoa Setup *********************************/
-#define MILKCOCOA_APP_ID      "noteiprs7bq4"
+#define MILKCOCOA_APP_ID      "dogivyoc3zl"
 #define MILKCOCOA_LED       "led"
 /************* Milkcocoa Setup (you don't need to change this!) ******************/
 #define MILKCOCOA_SERVERPORT  1883
