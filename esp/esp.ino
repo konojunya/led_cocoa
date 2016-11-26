@@ -5,7 +5,7 @@ void setup() {
     pinMode(RED, OUTPUT);
     pinMode(GREEN, OUTPUT);
     pinMode(BLUE, OUTPUT);
-    milkcocoa.on(MILKCOCOA_LED, "push", onled);
+    milkcocoa.on(MILKCOCOA_LED, "send", onled);
 }
 
 void loop() {
@@ -24,7 +24,7 @@ void onled(DataElement *elem){
     Serial.print(green);
     Serial.print("bule : ");
     Serial.print(blue);
-    
+
     analogWrite(RED, red);
     analogWrite(GREEN, blue);
     analogWrite(BLUE, green);
