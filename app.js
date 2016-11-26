@@ -16,7 +16,7 @@ var ml = new MilkCocoa("dogivyoc3zl.mlkcca.com"),
 		led_data = ml.dataStore("led");
 
 rgb_data.on("send",function(data){
-	led_data.push({
+	led_data.send({
 		red: parseInt(data.value.rgb[0]),
 		green: parseInt(data.value.rgb[1]),
 		blue: parseInt(data.value.rgb[2])
